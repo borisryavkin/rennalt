@@ -1,3 +1,0 @@
-<resources>
-    <style name="Theme.QrScanner" parent="android:Theme.Material.Light.NoActionBar" />
-</resources>
