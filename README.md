@@ -1,12 +1,12 @@
 # rennalt ⚡️📷
 
-My Kotlin Multiplatform playground for scanning QR codes and keeping a local scan diary on both Android and iOS. Fast, tiny, and a little nerdy. 😄
+My Kotlin Multiplatform app for scanning serial numbers of evolt machines on both Android and iOS. 😄
 
 ## Name lore 🧩
-I didn’t want to call it “evolt scanner” because the main product already owns that name. So I flipped “scanner” → “rennacs” and tucked “evolt” in the middle. Boom: **rennalt**. A tiny word puzzle, a tiny rebellion. 🔤⚡️
+I didn’t want to call it “evolt scanner” because the main product already owns that name. So I flipped “scanner” → “rennacs” and tucked “evolt” in the middle. Boom: **rennalt**. 🔤⚡️
 
 ## What it does ✨
-- Live camera preview + QR detection
+- Live camera preview + EV serial number detection
 - Local scan history with timestamps
 - One-tap “clear history” when I need a clean slate 🧼
 
