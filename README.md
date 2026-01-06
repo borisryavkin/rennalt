@@ -30,6 +30,7 @@ I didn’t want to call it “evolt scanner” because the main product already 
 1. Open the project in Android Studio.
 2. Sync Gradle.
 3. Run the `androidApp` configuration on a device or emulator with a camera.
+4. but if you're lazy here is the link to an apk https://drive.google.com/file/d/1dz1l5Ez7qIHOzzeiWTar-2WbrgaOUiCb/view?usp=share_link
 
 ## Run it (iOS) 🍎
 1. Open `iosApp/QrScannerIOS.xcodeproj` in Xcode.
