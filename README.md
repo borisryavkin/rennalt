@@ -40,3 +40,10 @@ I didn’t want to call it “evolt scanner” because the main product already 
 ## Notes & quirks 📝
 - Camera permission is required to scan.
 - Scan history is stored locally (Android via DataStore).
+
+## Images
+<img width="1024" height="1024" alt="Icon-iOS-Default-minus-1024x1024@1x" src="https://github.com/user-attachments/assets/5766eca7-5ed9-47a2-bc3f-a6b945a22edb" />
+
+https://github.com/user-attachments/assets/594f2165-4c84-4c3b-971c-d2143465c588
+
+
