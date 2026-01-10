@@ -1,0 +1,34 @@
+name: KnolevolabaseSwiftUI
+options:
+  bundleIdPrefix: com.evolt
+  deploymentTarget:
+    iOS: "16.0"
+  developmentLanguage: en
+  postGenCommand: ""
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+packages: {}
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  KnolevolabaseSwiftUI:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    resources:
+      - path: Resources
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: Knolevolabase
+        UILaunchScreen: {}
+        UIUserInterfaceStyle: Dark

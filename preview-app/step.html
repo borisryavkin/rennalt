@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Setup Step</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <main class="detail-page">
+      <a class="back-link" href="index.html">Back to guided setup</a>
+      <section class="detail-hero">
+        <div class="badge">Evolt 360 Guided Setup</div>
+        <h1 id="stepTitle">Loading step...</h1>
+        <p id="stepSummary">Preparing the detailed instructions.</p>
+        <div id="stepMeta" class="detail-meta"></div>
+      </section>
+
+      <section class="detail-card">
+        <h3>Quick actions</h3>
+        <ul id="stepActions" class="detail-list"></ul>
+      </section>
+
+      <section class="detail-card" style="margin-top: 18px;">
+        <h3>Detailed steps</h3>
+        <ul id="stepDetails" class="detail-list"></ul>
+      </section>
+    </main>
+
+    <script src="database/data.js"></script>
+    <script src="step.js"></script>
+  </body>
+</html>

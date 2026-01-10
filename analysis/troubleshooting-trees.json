@@ -1,0 +1,201 @@
+{
+  "version": "0.1",
+  "trees": [
+    {
+      "id": "tree.internet",
+      "title": "Internet connection",
+      "start": "check_control_panel",
+      "nodes": {
+        "check_control_panel": {
+          "type": "action",
+          "text": "Open Control Panel and tap Network",
+          "next": "ethernet_connected"
+        },
+        "ethernet_connected": {
+          "type": "decision",
+          "question": "Is Ethernet showing 100 connected?",
+          "yes": "online_status",
+          "no": "wifi_enabled"
+        },
+        "wifi_enabled": {
+          "type": "decision",
+          "question": "Is Wi-Fi ON and dongle detected?",
+          "yes": "add_wifi",
+          "no": "usb_lock"
+        },
+        "usb_lock": {
+          "type": "action",
+          "text": "System -> Lock USB OFF, refresh, power cycle",
+          "next": "wifi_enabled"
+        },
+        "add_wifi": {
+          "type": "action",
+          "text": "Remove old profiles, tap New Connection, enter password",
+          "next": "online_status"
+        },
+        "online_status": {
+          "type": "decision",
+          "question": "Does Online status show green?",
+          "yes": "resolved",
+          "no": "escalate"
+        },
+        "resolved": {
+          "type": "end",
+          "text": "Connection restored"
+        },
+        "escalate": {
+          "type": "end",
+          "text": "Escalate with serial and TeamViewer ID"
+        }
+      }
+    },
+    {
+      "id": "tree.white_screen",
+      "title": "White screen",
+      "start": "restart",
+      "nodes": {
+        "restart": {
+          "type": "action",
+          "text": "Restart kiosk",
+          "next": "control_panel"
+        },
+        "control_panel": {
+          "type": "decision",
+          "question": "Did Control Panel appear?",
+          "yes": "reconnect_update",
+          "no": "wait_recovery"
+        },
+        "reconnect_update": {
+          "type": "action",
+          "text": "Reconnect internet and run Software Update",
+          "next": "resolved"
+        },
+        "wait_recovery": {
+          "type": "action",
+          "text": "Wait 10 minutes for recovery",
+          "next": "still_white"
+        },
+        "still_white": {
+          "type": "decision",
+          "question": "Still white after 10 minutes?",
+          "yes": "escalate",
+          "no": "resolved"
+        },
+        "resolved": {
+          "type": "end",
+          "text": "White screen resolved"
+        },
+        "escalate": {
+          "type": "end",
+          "text": "Escalate to support"
+        }
+      }
+    },
+    {
+      "id": "tree.no_start_button",
+      "title": "No Start Scanning button",
+      "start": "power_cycle",
+      "nodes": {
+        "power_cycle": {
+          "type": "action",
+          "text": "Power cycle kiosk",
+          "next": "scale_ready"
+        },
+        "scale_ready": {
+          "type": "decision",
+          "question": "Scale API and Scale Status show Ready?",
+          "yes": "operator_login",
+          "no": "calibration"
+        },
+        "calibration": {
+          "type": "action",
+          "text": "Check scale settings and calibrate",
+          "next": "operator_login"
+        },
+        "operator_login": {
+          "type": "action",
+          "text": "Log in to Operator Panel and Save",
+          "next": "resolved"
+        },
+        "resolved": {
+          "type": "end",
+          "text": "Start Scanning button appears"
+        }
+      }
+    },
+    {
+      "id": "tree.printer_missing",
+      "title": "No print button or preview",
+      "start": "software_update",
+      "nodes": {
+        "software_update": {
+          "type": "action",
+          "text": "Run Software Update",
+          "next": "print_setting"
+        },
+        "print_setting": {
+          "type": "decision",
+          "question": "Is Operator Panel print setting Manual or Auto?",
+          "yes": "default_printer",
+          "no": "set_print_mode"
+        },
+        "set_print_mode": {
+          "type": "action",
+          "text": "Set print mode to Manual or Auto",
+          "next": "default_printer"
+        },
+        "default_printer": {
+          "type": "decision",
+          "question": "Is a default printer set?",
+          "yes": "resolved",
+          "no": "pair_printer"
+        },
+        "pair_printer": {
+          "type": "action",
+          "text": "Add printer and set Server Default",
+          "next": "resolved"
+        },
+        "resolved": {
+          "type": "end",
+          "text": "Print button restored"
+        }
+      }
+    },
+    {
+      "id": "tree.no_new_connection",
+      "title": "No New Connection option",
+      "start": "usb_lock",
+      "nodes": {
+        "usb_lock": {
+          "type": "action",
+          "text": "System -> Lock USB OFF, refresh",
+          "next": "power_cycle"
+        },
+        "power_cycle": {
+          "type": "action",
+          "text": "Power cycle kiosk",
+          "next": "new_connection_visible"
+        },
+        "new_connection_visible": {
+          "type": "decision",
+          "question": "Is New Connection visible now?",
+          "yes": "resolved",
+          "no": "test_dongle"
+        },
+        "test_dongle": {
+          "type": "action",
+          "text": "Test dongle on another device; if OK, update via Ethernet",
+          "next": "escalate"
+        },
+        "resolved": {
+          "type": "end",
+          "text": "Wi-Fi list restored"
+        },
+        "escalate": {
+          "type": "end",
+          "text": "Escalate to support"
+        }
+      }
+    }
+  ]
+}

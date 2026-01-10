@@ -1,0 +1,28 @@
+The scanner is stuck on the Control Panel screen
+
+  
+    
+I am having trouble initiating a scan and navigating past the control panel screen
+
+   
+
+Ensure that the scanner is connected to the Internet and displaying 'Online' in green at the bottom center of the Control Panel screen
+
+Press the green 'Operator Panel' button
+
+Enter the Operator Panel Logins (located on a black sticker at the back of the Evolt scanner)
+
+Refer to the following Operator Configuration:
+
+              Location  - Select your location from the drop down menu
+              Kiosk mode - Must always be set as unattended
+              Printer - Choose between manual or automatic printing for each scan.
+              Volume - Adjust the volume to suit your environment. We usually set it at 25
+
+Click on the "Save" button to apply the changes
+
+Begin the scanning process by pressing the red 'Start Scanning' button
+
+ 
+
+Video Tutorial:

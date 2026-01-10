@@ -1,0 +1,71 @@
+Nothing happens when you tap on Log In/ Sign Up for scan
+
+  
+    
+Screen not responding to touch of Log In/Sign Up 
+
+   
+
+Check if there is a faint grey circle on the top right-hand side of your scanning screen. 
+If the circle appears grey, it indicates that the machine is passcode activated
+
+Enter operator passcode to log in for a scan 
+
+If the problem persists, navigate to the Control Panel and re-enter the Operator Panel credentials before attempting the scan again
+
+Log in to the Operator Panel
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

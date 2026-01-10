@@ -1,0 +1,201 @@
+Age of Consent/ Data Protection for Minors
+
+  
+    
+Age of Consent in relation to Data Privacy varies per Country and State you are in.
+
+   
+Q1: Why is data security and privacy so important when using the Evolt
+360?
+A1: Data security and privacy are fundamental to Evolt's global operations. We
+ensure compliance with privacy legislation worldwide, safeguarding all user
+data, particularly for users who are legally deemed “underage.” This includes
+anonymizing underage data in the Evolt Insights platform to protect privacy
+and meet legal requirements.
+
+Q2: What does Evolt do to comply with the Age of Consent in different
+jurisdictions?
+A2: Evolt adheres to the legal age of consent as per jurisdictional requirements.
+Our robust process includes –
+ Anonymizing all data for underage users in Evolt Insights.
+ Allowing underage users to scan and access their printed results, but
+ensuring no personal data is identifiable in Insights.
+ Defaulting the age of consent to 18 for users outside predefined regions
+with lower age limits.
+
+Q3: What is the age of consent categories Evolt recognizes globally?
+A3: The minimum age of consent depends on the jurisdiction -
+ Age 16 - United Arab Emirates, Afghanistan, Antigua and Barbuda,
+Albania, Armenia, Angola, Argentina, Austria, Azerbaijan, and U.S. states
+such as California and Connecticut.
+ Age 13 - U.S. states such as Colorado, Utah, and Virginia.
+ Age 18 (Default) - Applies to users from regions not listed above.
+
+ 
+
+Q4: Can children participate in challenges using the Evolt 360?
+A4: Yes, children can participate in challenges, but privacy measures are strictly
+upheld -
+ Children can scan and see their individual printed results.
+ Insights anonymizes all underage data, so individual winners cannot be
+identified.
+ Organizers can access aggregated group data (e.g., totals and averages)
+for analysis.
+
+Q5: Can individual data for underage users be accessed or shared?
+A5: No, underage user data in Evolt Insights is anonymized and cannot be traced
+back to individuals. This ensures compliance with privacy legislation and
+protects underage users privacy.
+
+ 
+
+Q6: What steps should operators take to comply with age of consent laws?
+A6: Operators should -
+1. Verify the user’s jurisdiction and determine the applicable age of consent.
+2. Allow underage users access to printed scan results only.
+3. Communicate clearly with customers about privacy and compliance rules.
+
+Q7: Why can’t there be individual winners in challenges for underage users?
+A7: To protect the privacy of underage users and comply with anonymization laws,
+Evolt Insights does not allow individual identification of underage users in
+reports. Organizers can only access group-level aggregated data.
+
+ 
+
+Q8: How does Evolt handle anonymization for underage users?
+A8: For underage users, the Evolt Insights platform anonymizes all personal data.
+This process ensures compliance with global privacy laws while allowing
+users to see their individual scan results. No identifiable data is stored or
+accessible in Insights for these users.
+
+ 
+
+Age of Consent for Privacy 
+
+These vary depending on what country you are in or what state of that country you are in (USA). We use the country and state codes from the database for the anonymization.
+
+Countries where consent age is 13 -
+
+UNITED KINGDOM
+
+Countries where consent age is 16 -
+
+AUSTRIA                        
+
+BELGIUM                        
+
+BULGARIA                      
+
+CROATIA (local name: Hrvatska)
+
+CYPRUS                        
+
+CZECH REPUBLIC                
+
+DENMARK                        
+
+ESTONIA                        
+
+FINLAND                        
+
+FRANCE                        
+
+GERMANY                        
+
+GREECE                        
+
+HUNGARY                        
+
+IRELAND                        
+
+ITALY                          
+
+LATVIA                        
+
+LITHUANIA                      
+
+LUXEMBOURG                    
+
+NETHERLANDS                    
+
+POLAND                        
+
+PORTUGAL                      
+
+ROMANIA                        
+
+SLOVAKIA (Slovak Republic)    
+
+SLOVENIA                      
+
+SPAIN                          
+
+SWEDEN                        
+
+States where consent age is 13 -
+Colorado
+
+Utah    
+
+Virginia
+
+States where consent age is 16 -
+
+California
+
+Connecticut
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

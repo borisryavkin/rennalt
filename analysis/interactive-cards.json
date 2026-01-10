@@ -1,0 +1,380 @@
+{
+  "version": "0.1",
+  "serial_mapping": {
+    "LP3": {
+      "min": "EV0000-20250000"
+    },
+    "LP1": {
+      "min": "EV0000-20240000",
+      "max": "EV0000-20249999"
+    },
+    "SOM": {
+      "max": "EV0000-20239999"
+    }
+  },
+  "setup_steps": [
+    {
+      "id": "setup.identify-model",
+      "title": "Identify model and variant",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Serial number"],
+      "actions": [
+        "Scan serial using the app or enter manually",
+        "Resolve model based on serial mapping",
+        "Show model badge and required setup path"
+      ],
+      "verify": ["Model badge matches kiosk label"],
+      "links": [],
+      "offline_priority": "high"
+    },
+    {
+      "id": "setup.unbox-assemble",
+      "title": "Unbox and assemble",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Box on site"],
+      "actions": [
+        "Unbox kiosk and confirm included items",
+        "Assemble kiosk per video guide",
+        "Position kiosk near power and internet"
+      ],
+      "verify": ["Kiosk stable and powered"],
+      "links": [
+        "https://knowledge.evolt360.com/knowledge/setting-up-your-evolt-360-scanner",
+        "https://knowledge.evolt360.com/knowledge/how-to-unpack-your-evolt-360-scanner",
+        "https://knowledge.evolt360.com/knowledge/how-to-prepare-machine"
+      ],
+      "offline_priority": "medium"
+    },
+    {
+      "id": "setup.power-control-panel",
+      "title": "Boot to Control Panel",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Kiosk assembled"],
+      "actions": [
+        "Power on using rear switch",
+        "If login screen appears, tap Evolt logo to open Control Panel"
+      ],
+      "verify": ["Control Panel visible"],
+      "links": [],
+      "offline_priority": "high"
+    },
+    {
+      "id": "setup.connect-internet",
+      "title": "Connect to internet",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Control Panel"],
+      "actions": [
+        "Ethernet preferred: plug in cable and press Refresh",
+        "Wi-Fi: insert dongle in USB port 1, Network -> Wi-Fi On -> New Connection",
+        "Enter password and reconnect"
+      ],
+      "verify": ["Online status green and Network API connected"],
+      "links": [
+        "https://knowledge.evolt360.com/knowledge/how-to-connect-to-the-network",
+        "https://knowledge.evolt360.com/knowledge/no-option-to-add-new-connection"
+      ],
+      "offline_priority": "high"
+    },
+    {
+      "id": "setup.software-update",
+      "title": "Run software update",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Online status green"],
+      "actions": [
+        "Control Panel -> Software Update",
+        "Wait for update and reboot"
+      ],
+      "verify": ["Scanner returns to scan screen"],
+      "links": ["https://knowledge.evolt360.com/knowledge/software-update"],
+      "offline_priority": "medium"
+    },
+    {
+      "id": "setup.operator-panel",
+      "title": "Operator Panel login and configuration",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Operator credentials"],
+      "actions": [
+        "Open Operator Panel",
+        "Enter login from sticker on back",
+        "Set Location, Kiosk Mode (Unattended), Printer Mode, Volume",
+        "Save"
+      ],
+      "verify": ["Start Scanning button appears"],
+      "links": [
+        "https://knowledge.evolt360.com/knowledge/scanner-is-stuck-on-the-control-panel-screen",
+        "https://knowledge.evolt360.com/knowledge/what-is-my-operator-panel-log-ins"
+      ],
+      "offline_priority": "high"
+    },
+    {
+      "id": "setup.printer",
+      "title": "Printer setup",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Operator Panel configured"],
+      "actions": [
+        "Prefer wired USB connection",
+        "Control Panel -> Printer -> Add Printer",
+        "Select correct model driver and set Server Default"
+      ],
+      "verify": ["Default Printer shows Brother HL-L or HP M203"],
+      "links": [
+        "https://knowledge.evolt360.com/knowledge/connect-the-printer-to-the-evolt-360-body-scanner",
+        "https://knowledge.evolt360.com/knowledge/compatible-printer-s",
+        "https://knowledge.evolt360.com/knowledge/connecting-the-scanner-to-the-brother-printer-via-wi-fi",
+        "https://knowledge.evolt360.com/knowledge/how-to-connect-evolt-360-scanner-to-hp"
+      ],
+      "offline_priority": "medium"
+    },
+    {
+      "id": "setup.calibration",
+      "title": "Scale check and calibration",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Online status green"],
+      "actions": [
+        "Control Panel -> Scale",
+        "Set Measurement Mode Precision and Weight of Clothes 0.5kg",
+        "Calibrate -> Save",
+        "Test Weight Only"
+      ],
+      "verify": ["Weight reads accurately"],
+      "links": ["https://knowledge.evolt360.com/knowledge/calibrating-scanner"],
+      "offline_priority": "low"
+    },
+    {
+      "id": "setup.first-scan",
+      "title": "First scan and print test",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Printer configured", "Operator Panel configured"],
+      "actions": [
+        "Start Scanning",
+        "Run test scan",
+        "Confirm print preview and print output"
+      ],
+      "verify": ["Scan completes and prints"],
+      "links": [
+        "https://knowledge.evolt360.com/knowledge/no-print-button-and-preview-after-scan"
+      ],
+      "offline_priority": "medium"
+    },
+    {
+      "id": "setup.housekeeping",
+      "title": "Housekeeping and shutdown",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": [],
+      "actions": [
+        "Power off at end of day",
+        "Clean screen with microfiber cloth",
+        "Clean handles and foot electrodes with low-moisture wipe",
+        "Run monthly software update"
+      ],
+      "verify": ["Unit clean and powered down"],
+      "links": ["https://knowledge.evolt360.com/knowledge/evolt-360-scanner-housekeeping"],
+      "offline_priority": "low"
+    },
+    {
+      "id": "setup.passcode",
+      "title": "Enable passcode (optional)",
+      "models": ["SOM", "LP1", "LP3"],
+      "prerequisites": ["Support activation"],
+      "actions": [
+        "Request activation from support",
+        "Control Panel -> Refresh",
+        "Use grey circle to enter passcode per scan"
+      ],
+      "verify": ["Grey circle turns green after passcode"],
+      "links": ["https://knowledge.evolt360.com/knowledge/i-want-to-enable-a-passcode-system-on-my-evolt-360-scanner"],
+      "offline_priority": "low"
+    }
+  ],
+  "model_flows": {
+    "SOM": [
+      "setup.identify-model",
+      "setup.unbox-assemble",
+      "setup.power-control-panel",
+      "setup.connect-internet",
+      "setup.software-update",
+      "setup.operator-panel",
+      "setup.printer",
+      "setup.calibration",
+      "setup.first-scan",
+      "setup.housekeeping",
+      "setup.passcode"
+    ],
+    "LP1": [
+      "setup.identify-model",
+      "setup.unbox-assemble",
+      "setup.power-control-panel",
+      "setup.connect-internet",
+      "setup.software-update",
+      "setup.operator-panel",
+      "setup.printer",
+      "setup.calibration",
+      "setup.first-scan",
+      "setup.housekeeping",
+      "setup.passcode"
+    ],
+    "LP3": [
+      "setup.identify-model",
+      "setup.unbox-assemble",
+      "setup.power-control-panel",
+      "setup.connect-internet",
+      "setup.software-update",
+      "setup.operator-panel",
+      "setup.printer",
+      "setup.calibration",
+      "setup.first-scan",
+      "setup.housekeeping",
+      "setup.passcode"
+    ]
+  },
+  "troubleshooting_cards": [
+    {
+      "id": "issue.no-internet",
+      "symptom": "Cannot connect to internet",
+      "causes": ["Ethernet unplugged", "Wi-Fi disabled", "Wrong password", "USB dongle not detected"],
+      "steps": [
+        "Control Panel -> Network",
+        "Ethernet: confirm 100 connected",
+        "Wi-Fi: ensure ON, remove old profiles, add New Connection",
+        "Verify Online status green"
+      ],
+      "verify": ["Online status green"],
+      "escalate": "If still offline after Ethernet test",
+      "links": ["https://knowledge.evolt360.com/knowledge/how-to-connect-to-the-network"]
+    },
+    {
+      "id": "issue.no-new-connection",
+      "symptom": "No New Connection option",
+      "causes": ["USB lock on", "Wi-Fi dongle not detected"],
+      "steps": [
+        "System -> Lock USB OFF",
+        "Refresh and power cycle",
+        "Test dongle on another device",
+        "Update via Ethernet"
+      ],
+      "verify": ["New Connection visible"],
+      "escalate": "If dongle works elsewhere and button still missing",
+      "links": ["https://knowledge.evolt360.com/knowledge/no-option-to-add-new-connection"]
+    },
+    {
+      "id": "issue.white-screen",
+      "symptom": "Scanner stuck on white screen",
+      "causes": ["Interrupted update", "Unstable internet"],
+      "steps": [
+        "Restart kiosk",
+        "Reconnect internet",
+        "Run software update",
+        "Wait 10 minutes for recovery"
+      ],
+      "verify": ["Control Panel returns"],
+      "escalate": "If still white after 10 minutes",
+      "links": ["https://knowledge.evolt360.com/knowledge/scanner-is-stuck-on-a-white-screen"]
+    },
+    {
+      "id": "issue.control-panel-stuck",
+      "symptom": "Stuck on Control Panel",
+      "causes": ["Not logged into Operator Panel"],
+      "steps": [
+        "Ensure Online status green",
+        "Open Operator Panel and login",
+        "Set Kiosk mode Unattended and Save"
+      ],
+      "verify": ["Start Scanning button appears"],
+      "escalate": "If Operator login missing",
+      "links": ["https://knowledge.evolt360.com/knowledge/scanner-is-stuck-on-the-control-panel-screen"]
+    },
+    {
+      "id": "issue.no-start-button",
+      "symptom": "No Start Scanning button",
+      "causes": ["Operator session expired", "Scale API not ready"],
+      "steps": [
+        "Power cycle",
+        "Check Scale API and Scale Status Ready",
+        "Login to Operator Panel"
+      ],
+      "verify": ["Start Scanning visible"],
+      "escalate": "If issue persists",
+      "links": ["https://knowledge.evolt360.com/knowledge/no-start-scanning-button"]
+    },
+    {
+      "id": "issue.log-in-not-responding",
+      "symptom": "Tap Log In/Sign Up does nothing",
+      "causes": ["Passcode enabled"],
+      "steps": [
+        "Check faint grey circle",
+        "Enter operator passcode to enable scan",
+        "Re-enter Operator Panel login"
+      ],
+      "verify": ["Login responds"],
+      "escalate": "If still unresponsive",
+      "links": ["https://knowledge.evolt360.com/knowledge/nothing-happens-when-they-try-to-select-log-in/-sign-up-for-scan"]
+    },
+    {
+      "id": "issue.print-missing",
+      "symptom": "No print button or preview",
+      "causes": ["Outdated software", "Printer not set as default"],
+      "steps": [
+        "Run software update",
+        "Check Operator Panel print setting",
+        "Verify default printer and re-pair"
+      ],
+      "verify": ["Print button appears"],
+      "escalate": "If issue persists",
+      "links": ["https://knowledge.evolt360.com/knowledge/no-print-button-and-preview-after-scan"]
+    },
+    {
+      "id": "issue.print-misaligned",
+      "symptom": "Results not aligned on print sheets",
+      "causes": ["Wrong printer model", "Wireless reconnect issues"],
+      "steps": [
+        "Prefer wired USB connection",
+        "Delete and re-add printer",
+        "Adjust printer print position if needed"
+      ],
+      "verify": ["Print aligned"],
+      "escalate": "If still misaligned",
+      "links": ["https://knowledge.evolt360.com/knowledge/results-are-not-aligned-on-the-sheets-when-printed"]
+    },
+    {
+      "id": "issue.printer-jam",
+      "symptom": "Printer jams after scans",
+      "causes": ["Paper not fanned", "Paper type setting"],
+      "steps": [
+        "Clear jam",
+        "Fan paper before loading",
+        "Set paper type to Thick",
+        "Contact Brother support if persistent"
+      ],
+      "verify": ["Prints without jam"],
+      "escalate": "If jams continue",
+      "links": ["https://knowledge.evolt360.com/knowledge/printer-jamming"]
+    },
+    {
+      "id": "issue.power",
+      "symptom": "Scanner not turning on",
+      "causes": ["Power switch off", "Loose power cable", "Outlet issue"],
+      "steps": [
+        "Check rear switch",
+        "Reseat power cable with flat side up",
+        "Try different outlet"
+      ],
+      "verify": ["Unit powers on"],
+      "escalate": "If lights or sound but no boot",
+      "links": ["https://knowledge.evolt360.com/knowledge/scanner-is-not-turning-on"]
+    },
+    {
+      "id": "issue.calibration",
+      "symptom": "Weight or results inaccurate",
+      "causes": ["Scale settings incorrect", "Electrical interference"],
+      "steps": [
+        "Control Panel -> Scale",
+        "Set Measurement Mode Precision and Weight of Clothes 0.5kg",
+        "Calibrate and Save",
+        "Use Normal mode if interference"
+      ],
+      "verify": ["Accurate weight"],
+      "escalate": "If Scale API disconnected",
+      "links": ["https://knowledge.evolt360.com/knowledge/calibrating-scanner"]
+    }
+  ]
+}

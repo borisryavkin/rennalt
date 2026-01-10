@@ -1,0 +1,74 @@
+No 'Start Scanning' button
+
+  
+    
+No 'Start Scanning' button after logging back into Operator Panel
+
+   
+
+Power Cycle
+
+Check if Scale API Status is Ready and Scale Status is Ready
+
+Try to log back into the Operator Panel
+
+Log back into the Operator Panel
+
+If  the issue persists, submit a ticket or contact support at support@evolt360.com
+
+EVOLT Scanner Support Ticket Form
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

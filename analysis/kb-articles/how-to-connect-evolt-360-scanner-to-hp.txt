@@ -1,0 +1,88 @@
+How to connect the Evolt 360 Scanner to an HP M203W Printer
+
+   
+Below are the steps to help configure your Evolt360 machine with an HP M203W Printer
+
+1. Touch the Evolt logo on the top left corner of the screen and you will be presented
+with the control panel screen.
+
+2. On the control panel, select the "Printers" button and you will be presented with the
+printer screen menu. Then select the blue 'Add Printer' button on the left section of the
+screen.
+
+3. You will then be presented with a list of printers on the screen. Note that your HP
+Printer name will appear in the local printers section. Select the radio button located
+before the printer name and select the 'continue' button. Select
+the 'continue' button on the following screen and wait for 5 seconds.
+
+4. You will then be presented with the below screen showing you different printer
+drivers. The HP Printer provided supports the printer driver as highlighted in the below
+picture, that is, 'HP Laserjet Pro M203-M206 Postscript (recommended) (en)'. Once
+selected the printer driver HP Laserjet Pro M203-M206 Postscript (recommended) (en),
+select the 'add printer' button.
+
+5. You will then be presented with the below screen. Select the "Set Default Options"
+button and the screen will present you with a message. Wait for the message to
+disappear.
+
+6. You will be presented with the below screen. Select the green button on the far right corner of the screen that says "Set As Server Default" to set this printer as your default printer for the machine. You will then be presented with a message for confirmation. After this, you will see the same screen as below.
+
+7. Once done, select the blue button on the top left of the screen that says 'Back to
+Evolt Control Panel' and you will be presented with the control panel screen or the main
+scanning screen. In case you are presented with the control panel screen, simply select
+the red 'start scanning' button to return to the scanning screen.
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

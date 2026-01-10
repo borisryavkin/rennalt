@@ -1,0 +1,86 @@
+Compatible Printers
+
+  
+    
+Here you will find a list of the printers
+
+   Below is a list of printers that are compatible with the Evolt 360 Scanner:
+
+Essentially, any Brother HL-L Model printer will be compatible, below is a list of the commonly models used (list is not limited to these HL-L models)
+
+Brother HLL2300D
+Brother HLL2305DW
+Brother HLL2350DW
+Brother HLL2360DW
+Brother HLL2370DW
+Brother HLL2375DW
+Brother HLL2379DW
+
+Connect Scanner to Brother HL-L Printer
+
+We also have a special partnership with Staples to get our USA/ Canada customers a great discount on a recommended Printer and Toner. Please follow the link below to create an account and place an order.
+
+Staples/EVOLT Brother Printer and Toner
+
+ HPM203W
+
+How to connect Evolt 360 Scanner to HP M203W Printer
+
+ 
+
+ 
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

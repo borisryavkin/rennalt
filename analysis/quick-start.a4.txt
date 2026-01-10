@@ -1,0 +1,117 @@
+                   Quick Start Guide
+                   First-time setup for the Evolt 360 body scanner
+
+
+
+
+Welcome to Evolt
+Evolt 360 provides fast body composition insights through a simple, guided scanning experience. Use
+this guide to go from unboxing to your first scan.
+
+  Teams-first support    Secure connectivity   Printer ready
+
+
+
+
+In the box
+   Kiosk / scanner
+   4-pin DIN power supply (12V 5A, medically graded)
+   USB Bluetooth adapter (included)
+   Documentation
+
+
+Packaging specs
+
+  Box size                                      110 x 50 x 50 cm
+
+  Weight                                        30 kg
+
+
+
+   Serial format: EV...-YYYYMMDD. TeamViewer ID required for escalation.
+
+
+
+
+Hardware variants
+   SOM (2020 to 2023) - fan present
+   LP1 (LattePanda L1, shiny handles, 2023 to 2024) - fan present
+   LP3 (LattePanda Delta 3, matte handles, 2025 onward) - fan present
+Getting started
+ 1. After assembly and power on, the kiosk boots to Control Panel or main login.
+2. If you see the login screen, tap the Evolt logo (top left) to open Control Panel.
+3. Proceed to network setup before software update.
+
+
+
+
+Get connected
+Ethernet (preferred)
+
+ 1. Plug in the Ethernet cable and press Refresh.
+2. Confirm Online (green) and Network API Status connected.
+
+Wi-Fi
+
+ 1. Plug the USB Wi-Fi dongle into USB port 1.
+2. Network -> Wi-Fi On -> New Connection -> select network and enter password.
+3. Return to Control Panel and press Refresh.
+
+
+  If both Ethernet and Wi-Fi fail, test a mobile hotspot to confirm a firewall issue.
+
+
+
+
+Software update
+ 1. Control Panel -> Software Update.
+2. Wait for download to complete (up to 30 minutes depending on network).
+3. After reboot, return to Control Panel.
+
+
+
+
+Operator login
+ 1. Open Operator Panel and enter kiosk credentials.
+2. Choose Attended or Unattended mode.
+3. Set printer option and volume, then press Refresh.
+     Printer setup (Brother HL-L2300D example)
+       1. Control Panel -> Printers -> Add Printer.
+      2. Select Brother HL-L2300D using brlaser v4 (en).
+      3. Set Default Options, then Set As Server Default.
+      4. Return to Control Panel, press Refresh, and Start Scanning.
+
+
+
+
+     Firewall configuration
+
+        Service                     Domains                                                                        Port
+
+
+        Evolt Services              https://evoltactive.com, https://*.evoltactive.com                             443
+
+
+        Partner API                 https://evoltpartnerapi.com, https://*.evoltpartnerapi.com                     443
+
+
+        Connectivity check          https://ipv4.icanhazip.com                                                     443
+
+
+
+
+     Support and escalation
+
+     Preferred contact: Teams (insert channel or webhook).
+
+     Fallback: support@evolt360.com (machine) or education@evolt360.com (results).
+
+         TeamViewer ID
+         Serial number (EV...-YYYYMMDD)
+         Site name and location
+         Network type (Ethernet or Wi-Fi)
+
+
+
+Evolt 360 Quick Start Guide                                                                      Updated for 2025 hardware variants
+

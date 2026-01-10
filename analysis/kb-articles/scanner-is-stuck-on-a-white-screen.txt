@@ -1,0 +1,78 @@
+Scanner is stuck on a white screen
+
+  
+    
+Re-establish the network connection and proceed with running a software update.
+
+   
+
+This issue is commonly triggered by an unstable network connection while the machine is in the process of a software update.
+
+Restart the machine
+
+If the machine returns to the Control Panel, re-establish the network connection.
+
+Connect the Evolt scanner to the internet
+
+Once connected to the internet, attempt to run a software update.
+
+Software Update
+
+If the machine remains stuck on the White Screen, please wait 10 minutes to see if the recovery system re-boots back to its last saved state of operation. If after 10 minutes the screen does not go back to the control panel, we recommend reaching out to our support team or submitting a ticket for further assistance.
+
+EVOLT Scanner Support Form
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

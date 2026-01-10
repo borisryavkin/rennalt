@@ -1,0 +1,77 @@
+Software Update
+
+   
+
+Tap the Evolt logo located in the top left corner of the screen to access the control panel.
+
+Ensure that the machine is connected to the internet and displays a green 'Online' sign at the bottom middle section of the screen.
+
+Connect the Evolt 360 Scanner to the internet -Part 1
+Connect the Evolt360 Scanner to the internet- Part 2
+
+After successfully connecting to the internet, proceed by selecting the 'software update' button to kickstart the update process.
+
+The software update process will begin automatically. It typically takes around 3-4 minutes, depending on the internet speed of the connected network. Please allow the machine 2-3 minutes for the screen transition before proceeding to operate the machine once the new scanning screen is displayed.
+
+ 
+
+ 
+
+ 
+
+ 
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

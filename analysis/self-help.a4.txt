@@ -1,0 +1,121 @@
+                Self Help Guide
+                Step-by-step fixes for common kiosk issues
+
+
+
+
+How to use this guide
+Find the symptom below and follow the steps in order. If the issue repeats, escalate with TeamViewer ID
+and serial number.
+
+
+  Support request: https://offers.evolt360.com/scanner-printer-support
+
+
+
+
+1) Connecting to the internet
+ 1. Tap the Evolt logo to open Control Panel, then select Network.
+2. Ethernet: confirm cable and look for 100 connected.
+3. Wi-Fi: enable Wi-Fi, remove old networks, add New Connection, confirm Online.
+
+
+
+
+2) Software update
+ 1. Open Control Panel and confirm Online status.
+2. Select Software Update.
+3. Wait for reboot and return to the scan screen.
+
+
+
+
+3) White screen
+ 1. Restart the kiosk and reconnect to the internet.
+2. Run a software update if Control Panel returns.
+3. If the screen stays white after 10 minutes, contact Support.
+4) No New Connection option
+1. Confirm Wi-Fi dongle is connected behind the display.
+2. Control Panel -> System -> USB Lock Off, then restart.
+3. If still missing, test dongle on another device or use Ethernet.
+
+
+
+
+5) Cannot find customer details
+1. Remove special characters from the customer mobile number.
+2. Confirm the number matches the account creation number.
+3. Ask the customer to update details in the Evolt Active app if needed.
+
+
+
+
+6) Frozen screen or buttons not responding
+1. Tap the Evolt logo and check for operator password prompt.
+2. Log out and back into Operator Panel.
+3. Power cycle the kiosk if it remains unresponsive.
+
+
+
+
+7) Scan did not complete
+1. Restart the kiosk.
+2. Confirm Online status (green).
+3. Re-run the scan with Ethernet if possible.
+
+
+
+
+8) Cannot print or access Wi-Fi
+1. Control Panel -> System -> set USB Lock Off, then restart.
+2. Operator Panel -> confirm Print setting is not Off.
+3. Printers -> Set as Server Default.
+9) Weight not showing correctly
+1. Control Panel -> Scale -> set Clothing Weight to 0.5 kg (1.1 lbs).
+2. Confirm Measurement Mode is Precision and Scale Weight is 0.00.
+3. Press Calibrate and Save, then test Weight Only measurement.
+
+
+
+
+10) Connection to the internet lost
+1. Connect via Ethernet if possible.
+2. Try mobile USB tethering to rule out firewall issues.
+3. Contact local IT for network review if tethering works.
+
+
+
+
+11) Red Start Scanning button missing
+1. Open Operator Panel and log in with kiosk credentials.
+2. Press Refresh to return to Home screen.
+3. If Scale API status flips, contact Support.
+
+
+
+
+12) Need to re-login periodically
+1. Restart the kiosk.
+2. Re-enter kiosk credentials.
+
+
+
+
+13) eGym login not working
+1. Unplug and reconnect the card reader, then restart.
+2. Confirm Control Panel shows Card Reader Connected.
+3. Verify eGym credentials are current.
+     Support and escalation
+     Preferred contact: Teams (insert channel or webhook).
+
+     Fallback: support@evolt360.com (machine) or education@evolt360.com (results).
+
+         TeamViewer ID
+         Serial number (EV...-YYYYMMDD)
+         Site name and location
+         Network type (Ethernet or Wi-Fi)
+
+
+
+Evolt 360 Self Help Guide                                       Support Hub: https://knowledge.evolt360.com/knowledge
+

@@ -1,0 +1,203 @@
+                                                            http://www.evolt360.com/
+
+
+ Quick Start Guide
+Welcome to Evolt
+We are thrilled to have you join our community of health-conscious individuals
+dedicated to achieving their fitness goals.
+
+At Evolt, we believe in empowering customers with the best tools and technology to
+track and improve their health. That's why we are excited to introduce you to the Evolt
+360 Body Scanner, a state-of-the-art device designed to provide you with
+comprehensive insights into your body composition. And to assist you with the initial
+setup of your new Evolt 360 Kiosk
+
+With the Evolt 360, you can expect:
+       Accurate Measurements: Get precise data on your body fat percentage,
+       muscle mass, hydration levels, and more.
+       Personalized Reports: Receive detailed reports that help you understand your
+       current health status and track your progress over time.
+       User-Friendly Interface: Enjoy an easy-to-use platform that makes monitoring
+       your health simple and convenient.
+       Expert Support: Our team of professionals is here to assist you with any
+       questions or guidance you may need.
+
+We are committed to supporting your customers on their journey to better health and
+fitness. If you have any questions or need assistance, please don't hesitate to reach out
+to Customer Support (support@evolt360.com) for machine-related issues or Customer
+Success (education@evolt360.com) for any questions about results.
+
+Thank you for choosing Evolt 360. We look forward to helping your customers achieve
+their health and wellness goals with the Evolt 360 Body Scanner.
+
+From the entire Team at Evolt
+                                                             http://www.evolt360.com/
+
+
+ Quick Start Guide
+Getting Started
+Following the initial assembly of your Kiosk and powering up of your Kiosk, your Kiosk
+will boot to one of two screens
+    1. The Control Panel, which has the words “Control Panel” top centre of the page
+    2. Or the main login page, which features three buttons on the right-hand side of
+       the screen with different scan options
+
+If you are on the main login page, click on the Evolt360 logo in the top left-hand corner
+of the screen to get to the Control Panel page
+
+Get Connected
+The first step in your Kiosk setup is getting connected to the internet. The Evolt 360
+Kiosk will not operate on open or public Wi-Fi networks due to how we encrypt
+customers' data for their security and privacy. It should be noted that some corporate
+networks can have firewall permissions that block the Kiosk from accessing the
+internet. See the Firewall Configuration guide at the end of this document for more
+information
+
+The Kiosk can be connected to both an Ethernet cable or Wi-Fi. Ethernet provides the
+most stable connectivity; Wi-Fi networks can be used with the Evolt Kiosk however the
+Kiosk needs to be in a location with strong WiFi coverage and bandwidth of greater than
+50mb down and 15mb up at the kiosk. Note that Evolt will not support Kiosks or resolve
+issues with Kiosks that cannot connect to the internet or have slow WiFi connections.
+Because of this we recommend all sites have at least one location where a Kiosk can be
+relocated too for remote maintenance, connected to an Ethernet cable, in the event
+that WiFi is either not working or deemed to slow for our support team.
+If you are using an Ethernet cable, simply plug it into the kiosk and press the “Refresh”
+button on the control panel. If connected to the internet, you should see the Red Offline
+status change to a Green Online status on the bottom of the screen. You might also see
+the second line of text on the left-hand side of the control panel “Network API Status”
+change to connected. If not, check your firewall settings
+
+If you wish to use Wi-Fi. Firstly, ensure the Wi-Fi dongle is plugged into USB port 1, then
+press the “Network” button on the Control Panel and turn the Wi-Fi on. Press “New
+Connection”, select the network you wish to connect to, add the password of that
+network, and press connect. Once connected and you return to the Control Panel
+screen, press the “Refresh Button”. If connected to the internet, you should see the
+Red Offline status change to a Green Online status on the bottom of the screen. You
+might also see the second line of text on the left-hand side of the control panel
+“Network API Status” change to connected. If not, check your firewall settings
+                                                             http://www.evolt360.com/
+
+
+ Quick Start Guide
+If neither Ethernet or Wi-Fi connections are working, and the status in the bottom of the
+screen shows Offline in Red; or if the Scanner temporarily Shows Online and then
+Offline. Try connecting to Mobile HotSpot from a mobile phone or tether to a mobile
+phone with a USB Cable. In doing so, it connects to an open internet connection; not
+restricted by Firewalls. Note that firewall issue may also cause the Network API Status
+to disconnect; seen on the left side of the Control Panel.
+
+ If your Kiosk connects to a mobile phone, then review your network Firewall rules using
+the guide below. If not, contact your Network Provider or Evolt Support for assistance.
+
+Get Up to Date
+Now you are connected to the Internet. On the Control Panel, click on the “Software
+Update” button. Complete the process of downloading the latest version of the Evolt
+Software. Depending on the speed of your internet connection, this could take 30
+minutes to complete. Once complete, your Kiosk will reboot either back to the main
+scan page or the Control Panel. To move to the next stage after a software update, you
+need to be on the Control Panel page.
+
+Signing Up
+Insights@evolt360.com should have, at the time your Kiosk was delivered, provided you
+with a username and password for your Evolt Kiosk. If not, contact your Sales
+Representative or support@evolt360.com.
+
+Once you have your username and password, on the Kiosk Control Panel, click on
+“Operator Panel” and enter your username and password. The following page will
+present you with further information. Please select either attended or unattended
+depending on if you would like your machine to be password protected (Note: For
+clarity if ATTENDED is selected; you will need to sign into the Operator Panel for each
+scan. UNATTENDED keeps the Scanner on the Home Page; allowing anyone to sign in
+and scan. EVOLT can turn on a pin code to lock the Home Screen if a customer
+requests it to the Support/Insights Team). Select the printer setting of OFF, AUTO or
+MANUAL. Lastly chose your desired volume setting. Once complete and you return to
+the main Control Panel page, press “Refresh”.
+
+Setting up a printer
+Connecting a printer can be done either hardwired or over the internet. For a more
+reliable connection, use the USB cable provided.
+
+   •   Tap the Evolt logo to access the control panel.
+   •   Select "Printers," then click the blue "Add Printer" button.
+                                                           http://www.evolt360.com/
+
+
+ Quick Start Guide
+   •   Choose your Brother Printer from the list and click 'Continue.' Wait 5 seconds,
+       then click 'Continue' again.
+   •   Select the correct printer driver ("Brother HL-L2300D using brlaser v4 (en)") and
+       click 'Add Printer.'
+   •   Click "Set Default Options," then wait for the message to disappear.
+   •   Click "Set As Server Default" to make it the default printer. Confirm the message.
+   •   Click 'Back to Evolt Control Panel', press Refresh and then 'Start Scanning' to
+       return to the scanning screen.
+
+
+
+
+Ready to go
+If you have successfully completed the above tasks, a red “Ready to Scan” button will
+appear on the Control Panel. Pressing that button which will return you to the Main
+Scan menu page and you are ready to start using your Evolt 360 Kiosk, Congratulations
+
+Still having issues
+If you are still having issue contact Evolt Support at support@evolt360.com or call
+
+   •   Australia HQ: +61 7 5535 6277
+   •   USA HQ: +1888-98-EVOLT (1-888-983-8658)
+                                                             http://www.evolt360.com/
+
+
+ Quick Start Guide
+Firewall Configuration Guidance
+To ensure the Evolt kiosk functions correctly, specific domains, IPs, and ports must be
+whitelisted in the firewall.
+
+1. Allow Access to Evolt Services (Domain-Based Rule)
+    • Domains:
+          o https://evoltactive.com
+          o https://*.evoltactive.com
+    • Port: 443 (HTTPS)
+    • Reason: The kiosk needs to connect to these domains for essential services and
+       updates.
+
+2. Allow Access to Evolt Partner API Services (Domain-Based Rule)
+    • Domains:
+          o https://evoltpartnerapi.com
+          o https://*.evoltpartnerapi.com
+    • Port: 443 (HTTPS)
+    • Reason: The kiosk requires access to partner API services for integrations.
+
+3. Allow Access to 3rd-Party Check-in Service
+    • URL: https://ipv4.icanhazip.com
+    • Port: 443 (HTTPS)
+    • Reason: This service is used for external internet connectivity checks.
+
+4. Understanding Local vs. Web Services
+Local Services (Not Affected by Firewall)
+    • The kiosk runs local services on a Linux-based system, which the front end
+       connects to.
+    • These services use internal ports (not blocked by the firewall).
+    • If the firewall is misconfigured, the kiosk will still detect local services but may
+       be stuck in Control Panel mode if local services are down.
+Web Services (Firewall Dependent)
+    • The kiosk checks online status to enable certain functions.
+    • If web services are blocked by the firewall, users may not be able to download
+       updates or may be forced into offline mode.
+                                                          http://www.evolt360.com/
+
+
+ Quick Start Guide
+5. Symptoms of Firewall Issues
+Issue                                 Possible Cause
+
+Stuck in Control Panel                Cannot reach local services
+                                      (internal issue)
+
+Cannot download updates               Firewall blocking web services
+
+Offline mode only                     Internet access restricted
+
+To avoid these problems, ensure the whitelist rules for domains and ports are correctly
+set up.
+

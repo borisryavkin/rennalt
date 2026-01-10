@@ -1,0 +1,75 @@
+No 'Print' button or option to 'Preview' after a scan
+
+  
+    
+After doing a scan, it only shows a black screen without the preview of the scan and no 'Print' button 
+
+   
+Perform a software update on the scanner.
+
+Press the green 'Operator Panel' button to log in to verify that the Printing option is configured to either Manual or Auto.
+
+Next, ensure that your printer is properly connected by checking the Control Panel under the Default Printer section - the name should display as Brother_HL-L2370DW_series/Brother_HL-L2350DW_series/ Brother_HL-L2370DW_series. If you do not see this please follow the link below to pair your printer.
+
+Pair your Brother Printer to the EVOLT
+
+If this issue still persists after the software update, please send in a support inquiry.
+
+EVOLT Scanner/Printer Support Form
+
+ 
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

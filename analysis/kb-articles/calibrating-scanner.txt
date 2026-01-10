@@ -1,0 +1,37 @@
+Calibrating Scanner
+
+  
+    
+Scanner is showing either inaccurate weight and results
+
+   
+
+Note that the scanner is sensitive to electrical impulses. If the scanner is in a room with a lot of electronics, the scale may not function properly, resulting in an incomplete scan or inaccurate results.
+
+Access the Control Panel by pressing the Evolt logo on the top left corner of the Log In/ Sign up Screen
+
+If the SCALE API STATUS on the top left line shows as disconnected, please pause here and request photos and a video showing the control panel screen.
+
+Press the scale button.
+
+Make sure the settings are as follows:
+
+         Scale Mode: Metric or Imperial
+
+         Abdominal Circumference: ON
+
+         Abdominal Obesity over 18: ON
+
+         Measurement Mode: PRECISION
+
+If the scanner is in a room with a lot of electronics please change measurement mode to normal
+
+         Weight of Clothes: 1.1lbs (0.5kg)
+
+         Scale Weight: 0.00
+
+Select the 'Calibrate' button and press the 'Save' button to save changes.
+
+Select the red 'Start Scanning' button to go back to the Log In/ Sign up screen.
+
+Select "Weight Only Measurement" to test weight for accuracy or Log In for a scan to compare scan results.

@@ -1,0 +1,109 @@
+Results are not aligned on the sheets when printed
+
+  
+    
+This issue may occur if the incorrect printer model was selected during setup or if the printer is connected wirelessly to the scanner.
+
+   
+Begin by checking how your printer is connected to your scanner.
+
+If the printer is connected wirelessly
+
+While connecting wirelessly is an option, it is not advisable due to potential disconnection issues between the printer and scanner. This can lead to the printer inadvertently selecting a different model upon reconnecting to the internet, resulting in alignment issues with printed result sheets.
+
+ 
+
+If this happens we would need to delete and reconnect the printer to the scanner
+
+Make sure that the printer and scanner are connected to the same network.
+
+Delete all printers on the list then Add printer
+
+From the ‘Add Printer’ screen, locate the section of printers listed ‘discovered network printers’, select the Brother HL-L2370DW series option and hit continue then follow the next steps on how to connect the printer to the scanner correctly
+
+ 
+
+If the printer is connected via cable
+
+It is strongly advised to utilize the provided cable to ensure a direct connection between the printer and scanner. The USB A port should be plugged into one of the four USB ports behind the Display screen, while the USB B port should be plugged in to the printer.
+
+ 
+
+If the connection is correct, then follow the next steps on how to connect the printer to the scanner correctly
+
+ 
+
+If all steps above are followed; you may need to adjust the print position on the printer itself.
+
+Adjust the “Print position” in the printer settings.
+
+Press the “OK” button on the printer and navigate to:
+
+Printer -> Print Position -> Y offset
+
+The Y offset moves the print start position (at the upper left corner of pages) vertically up to -500 (up) to +500 (down) dots in 300 dpi units.
+
+The X offset moves the print start position (at the upper left corner of pages) horizontally up to -500 (left) to +500 (right) dots in 300 dpi units.
+
+Press the printer arrow keys in order to increase or decrease the Y offset Up or Down, an the X axis Left or Right and then confirm by pressing the Ok button.
+
+It may take a couple of adjustments in order to center the white text box in the result sheet, but from what we experienced we recommend trying to shift the Y offset down by about 20/25 points.
+
+Please contact us if this does not resolve your issue.
+
+EVOLT Scanner/Printer Support Form
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

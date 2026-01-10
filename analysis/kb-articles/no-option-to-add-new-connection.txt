@@ -1,0 +1,84 @@
+No option to add 'NEW CONNECTION'
+
+  
+    
+There is no option to connect to our WiFi
+
+   
+
+Ensure that the dongle is connected to one of the USB ports located behind the display.
+
+Access the Control Panel by pressing the Evolt logo on the top left corner of the Log In/ Sign up Screen
+
+Tap on 'System' and check if Lock USB is ON
+
+If the Lock USB setting is ON, turn it OFF and return to the control panel to select the 'Refresh' option.
+
+To ensure that it stays off, make sure to double-check under System to confirm that Lock USB remains OFF.
+
+If the Lock USB setting is OFF, perform a power cycle to finalize the changes.
+
+After restarting the machine, verify in the Control Panel under Network if the 'New Connection' button is now visible.
+
+If the 'New Connection' button is still not visible, please try connecting the dongle to a device to confirm that it is working properly.
+
+If there are no issues with the WiFi Dongle, perform a Software Update using an Ethernet Cable.
+
+Please reach out to our support team if you continue to experience difficulties at this stage.
+
+EVOLT Scanner Support Form
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

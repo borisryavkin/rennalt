@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evolt Knowledge Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="logo">EV</div>
+          <div>
+            <div class="brand-title">Evolt Scan</div>
+            <div class="brand-sub">Live visibility for deployed scanners worldwide.</div>
+          </div>
+        </div>
+        <div class="sidebar-note">
+          Guided setup, troubleshooting, and chatbot support are all in the main panel.
+        </div>
+      </aside>
+
+      <div class="content">
+        <header class="hero">
+          <div class="hero-left">
+            <div class="badge">Evolt 360 Interactive Guide</div>
+            <div class="welcome">Welcome to Evolt</div>
+            <h1>Scan. Configure. Fix. <span>All in one guided flow.</span></h1>
+            <p>
+              Serial-driven setup and troubleshooting for SOM, LP1, and LP3.
+              Built to replace PDFs with step-by-step confidence.
+            </p>
+            <div class="serial-box">
+              <label for="serial">Serial number</label>
+              <div class="serial-row">
+                <input id="serial" type="text" placeholder="EV001693-20230" />
+                <button id="scanBtn">Scan</button>
+              </div>
+              <div id="serialResult" class="serial-result">Enter a serial to identify the model.</div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-image">
+              <img src="team.png" alt="Evolt team" />
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-title">Setup Status</div>
+              <div class="progress">
+                <div id="progressBar" class="progress-bar"></div>
+              </div>
+              <div id="progressText" class="progress-text">0% complete</div>
+              <div class="stat-grid">
+                <div class="stat">
+                  <div class="stat-label">Model</div>
+                  <div id="modelStat" class="stat-value">Unknown</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-label">Steps</div>
+                  <div id="stepStat" class="stat-value">0</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-label">Offline</div>
+                  <div class="stat-value">Ready</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <section class="section">
+            <div class="section-header">
+              <h2>Guided Setup</h2>
+              <p>Follow the steps in order. Each step is tailored to the model.</p>
+            </div>
+            <div id="steps" class="card-grid"></div>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h2>Troubleshooting</h2>
+              <p>Search symptoms and get a direct fix. Tap a card to expand details.</p>
+            </div>
+            <div class="search-row">
+              <input id="issueSearch" type="text" placeholder="white screen, no print, offline" />
+              <button id="issueBtn">Search</button>
+            </div>
+            <div id="issues" class="card-grid"></div>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h2>Ask the Chatbot</h2>
+              <p>Fast answers from the knowledge base dataset.</p>
+            </div>
+            <div class="search-row">
+              <input id="chatInput" type="text" placeholder="How do I connect to Wi-Fi?" />
+              <button id="chatBtn">Ask</button>
+            </div>
+            <div id="chatAnswer" class="chat-answer">Ask a question to see an answer.</div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div>Preview only. Content sourced from PDFs + Knowledge Base.</div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="database/kb-data.js"></script>
+    <script src="database/docx-data.js"></script>
+    <script src="database/data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

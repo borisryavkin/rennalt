@@ -1,0 +1,33 @@
+Connecting the Evolt 360 Body Scanner to the internet
+
+  
+    
+Cannot connect the Evolt 360 Body Scanner to the internet
+
+   
+
+Access the Control Panel by pressing the Evolt logo on the top left corner of the Log In/ Sign up Screen
+
+Tap on 'Network'
+
+If you are connecting the scanner to Ethernet, the Ethernet section should show '100 connected' as long as the ethernet cord is plugged in to the port behind the screen and the port in your facility is actively running internet
+
+If you are connecting via Wi-Fi, make sure that it is turned ON
+
+Remove all profiles in case you are seeing unknown network connections showing up on the list
+
+Tap on 'New Connection' then connect to the preferred network
+
+Make sure that we are entering the correct password to your selected network
+
+If uncertain about the password, attempt connecting to the Wi-Fi on another device such as a mobile phone or computer and manually input the password to verify its accuracy.
+
+To confirm the Wi-Fi connection, ensure that it displays either '100 connected' and 'Online' in green at the bottom center of the screen.
+
+ 
+
+Please note that the Evolt Scanner can still be used for scanning even if it is offline and not connected to the internet. However, it will not synchronize the scan results with the Evolt Active or Insights Dashboard until it is reconnected to the internet.
+
+ 
+
+Video Tutorial

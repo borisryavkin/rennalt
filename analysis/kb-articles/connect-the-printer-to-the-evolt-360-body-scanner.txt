@@ -1,0 +1,43 @@
+Connect the Printer to the Evolt 360 Body Scanner
+
+  
+    
+Having trouble with printing or the scan results are not aligning to the result sheets
+
+   
+
+Ensure that the Evolt is turned on
+
+Ensure the printer is turned on and not on Deep Sleep
+
+Connect the printer to the scanner using the provided cable
+
+The USB A port should be plugged into one of the USB ports behind the Display screen, while the USB B port should be plugged into the printer.
+
+Go to the Control Panel by pressing the Evolt logo on the top left corner of the Log In/ Sign up Screen
+
+Select the 'Printer' button
+
+If you are seeing a list of different printers, select each printer and select the ‘Delete Printer’ option.
+
+Once every printer on the list is deleted, click the ‘Add Printer’ option in blue
+
+From the ‘Add Printer’ screen, locate the section of printers listed ‘local printers’, select the Brother HL-L2370DW series option and hit continue
+
+Next screen hit continue
+
+On the next screen, find the list of printer models and choose the 'Brother HL-L2300D' using brlaser v4 (en)’ then tap on 'Add Printer'.
+
+Tip: It is the one after the ‘Brother HL-8050N Foomatic/Postscript (en)’ option and before the ‘Brother MC 3000 Foomatic/epson (recommended) (en)’  
+
+On the ‘Set Printer Options’ page select ‘Set Default Options’
+
+On the ‘Brother_HL_L2370DW_series’ Page select the green ‘Set As Server Default’ button.
+
+In the top left corner of the screen, hit the blue ‘Back to Evolt Control Panel button
+
+Verify that your printer is connected by checking the Control Panel under the Default Printer section - the name should be Brother_HL-L2370DW_series.
+
+ 
+
+Video Tutorial

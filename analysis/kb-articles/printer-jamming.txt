@@ -1,0 +1,80 @@
+Printer Jamming 
+
+  
+    
+The printer continues to experience paper jams after each scan.
+
+   
+
+Check on the link below to make sure we clear any jam on the printer
+
+Clear paper jam
+
+After clearing all jams, the paper sheets should be fanned out before loading into the paper tray, thereby allowing air to sit between the sheets – this will aid in minimizing paper jams in the printer
+
+Preparing paper for loading into the paper tray
+
+If the problem continues, change the paper type setting directly on the printer. Press the 'ok' button on the printer four times to access the paper type setting, then select 'thick paper'.
+
+If switching to thick paper continues to result in paper jams, try adjusting the paper type setting to a different option and test print again.
+
+If the problem persists, we recommend contacting Brother Support for further assistance. They are experts in their products and can provide specialized help in identifying and resolving any issues.
+
+Brother Support Line - 877-276-8437 
+
+ 
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

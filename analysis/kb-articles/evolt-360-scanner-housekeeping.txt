@@ -1,0 +1,93 @@
+Evolt 360 Scanner Housekeeping
+
+  
+    
+A simple daily + monthly checklist for your Evolt 360 Scanner
+
+   
+ 
+
+Daily Operational Checklist 
+
+Power the EVOLT 360 on by using the switch on the back of the base of the unit 
+
+It is important that the EVOLT 360 is also plugged into a surge protector to protect the device from a power surge 
+
+Ensure the Scanner is connected to the internet; being either a password-protected Wi-Fi Network or an ethernet connection 
+
+Ensure the Scanner is logged into your Operator Panel to be able to scan; if you are not logged in, the scanner will remain on the Control Panel with no red “Start Scanning” button. 
+
+Login Credentials for your location were sent by the EVOLT Team when the unit was initially purchased; if you are unsure of your login credentials, please email us for assistance at support@evolt360.com /  support.usa@evolt360.com 
+
+Monthly, you can run a software update from the Control Panel 
+
+The Control Panel is accessed by pressing the “EVOLT” logo in the upper left-hand corner 
+
+The scanner must be connected to the internet to run the update 
+
+Once the update is completed the scanner will reboot and return to the home page. 
+
+IMPORTANT: At the end of each day, the best practice is to power the unit off by using the switch at the base of the back of the unit; this will help protect the unit if there is a power outage/power surge 
+
+ 
+
+Cleaning the EVOLT 
+
+Wipe the screen clean by using a microfiber cloth; if the LCD screen is dirty and requires a solution, we recommend spraying a small amount of Windex onto the cloth and then using that. We do not advise spraying the screen directly with any cleaning solution as this may allow moisture to get into the unit and damage the interior parts. 
+
+A gym wipe that has low moisture can be used to clean and wipe the handles and feet electrodes as well as the rest of the unit, excluding the LCD screen. 
+
+  kbDom.whenReady(function() {
+    var smoothScroll = new smoothAnchorsScrolling();
+
+    var articleSmoothScrolling = function() {
+      function scrollToAnchor(state) {
+        const anchorId = (state && state.anchorId) || null;
+        if (!anchorId) {
+          return;
+        }
+        var anchor = document.querySelector(
+          '[id="' + anchorId.substring(1) + '"][data-hs-anchor="true"]'
+        );
+        smoothScroll.scrollTo(anchor);
+      }
+
+      document
+        .querySelectorAll('a[href^="#"][rel*="noopener"]')
+        .forEach(function(link) {
+          // Adding the handler to the click event on each anchor link
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var node = e.currentTarget;
+            var targetAnchorId = decodeURI(node.hash);
+            var state = { anchorId: targetAnchorId };
+
+            scrollToAnchor(state);
+            history.pushState(state, null, node.href);
+          });
+        });
+
+      window.addEventListener('popstate', function(e) {
+        if (e.state !== undefined) {
+          scrollToAnchor(e.state);
+        }
+      });
+
+      (function() {
+        var targetAnchorId = decodeURI(window.location.hash);
+        var initialState = {
+          anchorId: targetAnchorId,
+        };
+        if (targetAnchorId) {
+          setTimeout(function() {
+            scrollToAnchor(initialState);
+          }, 1);
+        }
+        history.pushState(initialState, null, '');
+      })();
+    };
+
+    window.addEventListener('load', function(e) {
+      articleSmoothScrolling();
+    });
+  });

@@ -1,0 +1,27 @@
+Connecting the Scanner to the Brother Printer via Wi-Fi
+
+  
+    
+This will guide you on how to connect the printer to a Wi-Fi Network; which allows you to connect the scanner to the Printer wirelessly
+
+   
+
+-Ensure the Scanner and the Printer are both powered on
+
+- Connect the Brother Printer to the internet:    Connect the Brother Printer to Wi-Fi  -
+
+Touch the EVOLT logo on the top left corner of the screen and you will be presented with the control panel screen.
+
+On the control panel, select the "Printers" button and you will be presented with the printer screen menu. Then select the blue 'Add Printer' button on the left section of the screen.
+
+You will then be presented with a list of printers on the screen, options being Local, Network or Other Network Printers. Note that your Brother Printer name will appear in the “Discovered Network Printers” section just as shown the in below picture. Select the button located before the printer name and select the 'continue' button. On the following screen, select the 'continue' button again and wait for 5 seconds.
+
+You will then be presented with the screen showing you different printer drivers. The Brother Printer provided supports the printer driver as highlighted in the below picture, that is, 'Brother HL-L2300D using brlaser v4 (en)'. The easy way to find this driver is to scroll down through the list to locate the first printer of the series 'MC' and you will see the desired printer driver just above it in the list. Once selected the printer driver Brother HL-L2300D using brlaser v4 (en), select the 'add printer' button.
+
+ Then select the "Set Default Options" button and the screen will then present you with a message. Wait for the message to disappear. 
+
+ You will then need to select the green button on the far right corner of the screen that says "Set As Server Default" to set this printer as your default printer for the machine. You will then be presented with a message for confirmation. 
+
+Once done, select the blue button on the top left of the screen that says 'Back to Evolt Control Panel' and you will be presented with the control panel screen or the main scanning screen. In case you are presented with the control panel screen, simply select the red 'start scanning' button to return to the scanning screen.
+
+Video Tutorial:

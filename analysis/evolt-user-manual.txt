@@ -1,0 +1,504 @@
+                                                                       http://www.evolt360.com/
+
+
+
+Evolt Self Help Guide for the Evolt Kiosk
+Welcome
+We’re so glad you’re here! This guide is designed to help you get the most out of your Evolt Kiosk
+experience. Whether you're setting up for the first time or just need a quick fix, this manual is here to
+walk you through common issues and simple solutions—no technical know-how required!
+
+Our goal is to make things as easy and stress-free as possible. You’ll find clear, step-by-step
+instructions to help you troubleshoot and resolve everyday problems on your own, without needing
+to contact Evolt Support.
+
+That said, we know that sometimes you might need a little extra help—and that’s totally okay! If you
+ever feel stuck or need more assistance, our friendly support team is just a click away. Simply visit:
+👉 https://offers.evolt360.com/scanner-printer-support
+There, you can quickly create a support request and we’ll be happy to assist you.
+
+Let’s get started and make your Evolt Kiosk experience smooth and successful!
+                                                                                                http://www.evolt360.com/
+
+
+
+
+Connecting the Evolt 360 to the Internet .................................................................................... 4
+Software Update ............................................................................................................................ 5
+The scanner is stuck on a white screen ....................................................................................... 6
+No option to add 'NEW CONNECTION'................................................................................... 7
+Cannot Find Customers Detail .................................................................................................... 8
+Frozen Kiosk Screen ..................................................................................................................... 9
+Kiosk did not complete a scan ................................................................................................... 10
+I cannot print or access Wi-Fi.................................................................................................... 11
+Weight not showing correctly .................................................................................................... 12
+Connection to the Internet Lost ................................................................................................. 14
+The red button to start scanning is not there ........................................................................... 15
+Why do I need to relogging to the Kiosk .................................................................................. 16
+
+
+
+
+                                                          Useful Links:
+Knowledge Evolt 360- https://knowledge.evolt360.com/knowledge
+Contact Us/ Support- https://knowledge.evolt360.com/knowledge/contact-us-support
+http://www.evolt360.com/
+                                                                     http://www.evolt360.com/
+
+
+
+Connecting the Evolt 360 to the Internet
+Issue : How do I connect the Evolt 360 Body Scanner to the
+internet
+
+
+Connecting the Kiosk to a Network
+
+To check or set up your kiosk’s network connection, follow these steps:
+
+   1. Tap the Evolt logo in the top left corner of the Log In / Sign Up screen to access the
+      Control Panel.
+   2. Select Network from the menu.
+
+For Ethernet Connection:
+
+   •    Ensure the Ethernet cable is securely plugged into the port behind the kiosk screen and into
+        an active internet port at your facility.
+   •    The Ethernet section should display “100 connected” if the connection is successful.
+   •    Evolt strongly recommends using an Ethernet cable for the most stable and reliable
+        connection, especially in environments with inconsistent Wi-Fi coverage.
+
+For Wi-Fi Connection:
+
+   3. Make sure Wi-Fi is turned ON.
+   4. Remove any unknown or outdated network profiles from the list.
+   5. Tap New Connection and select your preferred network.
+   6. Enter the correct Wi-Fi password when prompted.
+   7. To confirm a successful connection, look for “100 connected” or “Online” in green text at
+      the bottom center of the screen.
+   8. Please note: If your kiosk is connected via Wi-Fi, Evolt may be limited in the support it can
+      provide, particularly if issues are related to network stability or performance.
+
+Link to Video: https://knowledge.evolt360.com/knowledge/how-to-connect-to-the-network
+                                                                     http://www.evolt360.com/
+
+
+
+Software Update
+Issue: I want to download the newest version of the software to
+correct any software bugs and to remain up to date with the
+latest from Evolt
+
+To perform a software update on your Evolt Kiosk, follow these steps:
+
+   1. Tap the Evolt logo in the top left corner of the screen to access the Control Panel.
+   2. Ensure the kiosk is connected to the internet. You should see a green “Online” status at the
+      bottom center of the screen.
+   3. Once connected, select the Software Update button to begin the update process.
+
+The update will start automatically and typically takes 3–4 minutes, depending on your internet
+speed. After the update begins, allow 2–3 minutes for the screen to transition. Once the new
+scanning screen appears, the kiosk is ready for use.
+
+Important: Regular software updates are essential to ensure your kiosk is running the latest features
+from Evolt and remains free of bugs or performance issues. Keeping your software up to date helps
+maintain optimal functionality and user experience.
+                                                                     http://www.evolt360.com/
+
+
+
+The scanner is stuck on a white screen
+Issue: The Kiosk screen is all White.
+Troubleshooting a White Screen on the Evolt Kiosk
+
+If your kiosk displays a white screen, follow these steps:
+
+    1. Restart the kiosk.
+    2. If the kiosk returns to the Control Panel, re-establish the network connection.
+    3. Once connected to the internet, attempt to run a software update
+
+If the kiosk remains stuck on the white screen:
+
+    •   Wait 10 minutes to allow the system’s recovery process to attempt a reboot to its last saved
+        operational state.
+    •   If the screen does not return to the Control Panel after this time, please contact Evolt
+        Support or submit a support ticket for further assistance.
+
+Note: A white screen typically indicates that the kiosk has detected a corruption in its software or
+database. During this time, the kiosk is attempting to recover a backup version of its system.
+
+Important: Frequent white screens may be a sign of insufficient internet speed or unstable
+connectivity. If your kiosk is currently connected via Wi-Fi, Evolt strongly recommends switching
+to a wired Ethernet connection for improved stability and performance. This also ensures better
+support and reduces the likelihood of recurring issues.
+
+If the kiosk restarts and remains on a white screen with no other screens displayed:
+
+This indicates that the kiosk was unable to recover from the issue and requires a software base
+image reset. This process must be performed by the Evolt Support Team and will require:
+
+    •   A USB drive
+    •   A wired keyboard and mouse
+
+Link to support form: https://offers.evolt360.com/scanner-printer-support
+                                                                       http://www.evolt360.com/
+
+
+
+
+No option to add 'NEW CONNECTION'
+Issue: There is no option to connect to our WiFi
+If your kiosk is not detecting the Wi-Fi dongle, please follow these steps:
+
+    1. Ensure the Wi-Fi dongle is securely connected to one of the USB ports located behind the
+       display.
+    2. Tap the Evolt logo in the top left corner of the Log In / Sign Up screen to access the
+       Control Panel.
+    3. Select System and check if USB Lock is turned ON.
+    4. If USB Lock is ON:
+            o Switch it OFF.
+            o Return to the Control Panel and restart the kiosk.
+            o After restarting, go back to System to confirm that USB Lock remains OFF.
+    5. If USB Lock is already OFF, perform a power cycle (turn the kiosk off and back on) to apply
+       the setting.
+    6. After restarting, go to the Network section in the Control Panel and check if the ‘New
+       Connection’ button is now visible.
+    7. If the ‘New Connection’ button is still not visible:
+            o Test the dongle by connecting it to another device to confirm it is functioning
+                properly.
+    8. If the dongle is working, try performing a Software Update using a wired Ethernet
+       connection.
+    9. If the issue persists, please contact Evolt Support for further assistance.
+
+
+
+
+Link to support form: https://offers.evolt360.com/scanner-printer-support
+                                                                     http://www.evolt360.com/
+
+
+
+
+Cannot Find Customers Detail
+Issue: When trying to logon to the kiosk the customers details
+cannot be found
+
+Things to Check When a Customer is Experiencing Login Issues
+
+   1. Check for Special Characters in the Mobile Number
+         o Does the customer’s mobile or cell number include special characters (e.g. +, !, $,
+              etc.)?
+                   § If yes, ask the customer to log in to the Evolt Active App and update their
+                     phone number by removing any special characters.
+                   § Alternatively, you can contact Evolt Support to assist with removing the           Commented [ES1]: @Chris Simpfendorfer might be better
+                                                                                                        for insights to be listed as the POC since we cannot edit the
+                     special characters.                                                                phone number
+   2. Verify the Mobile Number Matches the One Used During Account Creation
+         o If the number doesn’t match:
+                   § Ask the customer to log in to the Evolt Active App and update their phone
+                     number.
+                   § Or, contact Evolt Support to request a password reset.
+                   § If you're unsure, it's best to start by having the customer update their details
+                     in the app.
+   3. Confirm the Customer Has an Active Account
+         o Customers can delete their account from within the Evolt Active App.
+         o If the account has been deleted or you're unsure of its status, please contact Evolt
+              Support to check and, if needed, re-enable the account.                                   Commented [ES2]: Are we steering away from the need for
+                                                                                                        a privacy web form if we can over phone/email confirm they
+                                                                                                        are the account owner?
+                                                                      http://www.evolt360.com/
+
+
+
+Frozen Kiosk Screen
+Issue: When trying push any of the buttons on the kiosk, none
+seem to work
+
+Troubleshooting Steps:
+
+   1. Check for Attended Mode:
+           o Tap the Evolt logo located in the top left corner of the screen.
+           o If this opens the control panel, your kiosk is likely in Attended Mode.                  Commented [ES3]: Should be Partner Mode
+           o Look for a small circle in the top right corner of the screen. Tap it, and you’ll be
+              prompted to enter a password.
+           o Please contact your Company Champion to obtain the password.
+           o Once entered, the kiosk should return to normal functionality, allowing you to use all
+              buttons as expected.
+   2. If the Evolt logo does not respond:
+           o Log out of your Operator Panel and then re-log into the Operator Panel
+           o If this does not fix the issue; Power off the kiosk.                                     Commented [ES4]: First step normally to resolve is have
+                                                                                                      them log out of the Operator Panel and then log back in
+           o Wait for 10 seconds, then power it back on.
+           o If the issue persists after restarting, please reach out to Evolt Support for further
+              assistance.
+
+
+
+
+To change your kiosk from Attended Mode to Unattended Mode, please follow these steps:
+
+   1.   Tap the Evolt logo in the top left corner of the screen to access the control panel.
+   2.   Navigate to the Operator Panel.
+   3.   Re-enter your login credentials when prompted.
+   4.   Select Unattended Mode from the available options.
+
+Once completed, your kiosk will return to standard operation, allowing users to interact with it as   Commented [ES5]: This does not turn off the pincode
+usual.                                                                                                "partner mode". this needs to be done by our side.
+
+                                                                                                      Attended mode keeps the scanner on the Control Panel and
+                                                                                                      forces them to login to the Operator Panel for every scan.
+                                                                                                      Partner mode basically saves the email and only requires the
+                                                                                                      password and keeps the scanner on the Scanning page
+                                                                      http://www.evolt360.com/
+
+
+
+Kiosk did not complete a scan
+Issue: When doing a scan, the scan screen freezes before
+completing
+
+Kiosk Internet Connectivity and Scan Freezing Issue
+
+The Evolt Kiosk is designed to function without an internet connection. However, certain parts of the
+scanning process do rely on connectivity. In particular, we’ve observed that at locations with weak or
+unstable Wi-Fi, a scan may begin successfully but fail when attempting to upload data to the Evolt
+Cloud. This can cause the kiosk to appear unresponsive or “frozen.”
+
+What to Do:
+
+   1. Restart the Kiosk to reset the system.
+   2. Check the internet connection—look for the small green text at the bottom of the screen. It
+      should say “Online.”
+   3. Once the kiosk is confirmed to be online, re-perform the scan.
+
+Maintaining a stable internet connection throughout the scanning process helps ensure smooth
+operation and data upload. Where ever possible have an Evolt Kiosk plugged into a data cable
+(ethernet)
+                                                                       http://www.evolt360.com/
+
+
+
+I cannot print or access Wi-Fi
+Issue: I know Wi-Fi is working at our Gym, but I still cannot get
+onto the Wi-Fi .Or. I know my printer which is connected to my
+Kiosk via a USB cable is all working, but it will not print
+
+
+USB Lock Feature on the Evolt Kiosk
+
+The Evolt Kiosk is a medical-grade device, and when used in clinical or healthcare environments,
+regulatory requirements may prohibit the use of external USB devices. To comply with these
+standards, Evolt includes a USB Lock feature that disables USB ports on the kiosk.
+
+Occasionally, this feature may be accidentally triggered or enabled.
+
+To disable USB Lock:
+
+   1.   Tap the Evolt logo in the top left corner to access the Control Panel.
+   2.   Navigate to System Settings.
+   3.   Locate the USB Lock option and switch it to Off.
+   4.   Close the settings page.
+   5.   Restart the kiosk—please note that the change will only take effect after the kiosk has been
+        restarted.
+
+Check Printer Settings:
+
+   1. Tap the EVOLT logo in the left hand corner
+   2. Log into the Operator Panel using your machine logins
+   3. Check the Print setting is not set to “OFF”; setting should be set to Manual of Auto
+   4. From the Control Panel; ensure the printer you are using is set to the “Server Default”
+           a. Select Printers from the Control Panel
+           b. Select your Printer and the press the green “Set as Server Default" button
+   5. If the issue of not printing persists contact EVOLT Support
+                                                                       http://www.evolt360.com/
+
+
+
+Weight not showing correctly
+Issue: The customers weight is more than it should be, the scale
+does not appear correct
+Adjusting Clothing Weight and Calibrating the Evolt Scale
+
+The Evolt Kiosk scale includes a feature that allows you to account for the estimated weight of
+clothing worn by customers. This setting is fully customizable via the Control Panel.
+
+To adjust the clothing weight setting:
+
+    1. Tap the Evolt logo in the top left corner to open the Control Panel.
+    2. Select Scale from the menu.
+    3. In the bottom left corner of the screen, you’ll find a field where you can set the estimated
+       clothing weight.
+
+Evolt recommends setting this as a “set and forget” value—an approximate weight that remains
+consistent for all users. For most gym environments, a setting of 0.5 kg /1.1lbs is typically suitable.
+
+If the scale readings still seem off:
+
+    •   On the same screen, press the Calibrate button. This will initiate a system check and reset
+        the kiosk’s weight sensors, which can occasionally fall out of calibration.
+
+Here’s a professional and friendly rewrite of your message:
+
+
+
+
+If the scale readings still seem off:
+
+    1. Tap the Evolt logo in the top left corner of the Log In / Sign Up screen to access the
+       Control Panel.
+    2. Select the Scale option—ensure no one is standing on the scale during this process.
+    3. Confirm the following settings:
+           o Scale Mode: Metric or Imperial (based on your preference)
+           o Abdominal Circumference: ON
+                                                                      http://www.evolt360.com/
+
+
+           o   Abdominal Obesity Over 18: ON
+          o Measurement Mode: PRECISION
+          o Weight of Clothes: 0.5 kg (or 1.1 lbs)
+          o Scale Weight: 0.00
+   4. Press the Calibrate button, then select Save to apply the changes.
+   5. Tap the red Start Scanning button to return to the Log In / Sign Up screen.
+   6. To test the scale:
+          o Choose Weight Only Measurement to check accuracy, or
+          o Log in and complete a full scan to compare results.
+
+
+
+
+Link to video: https://knowledge.evolt360.com/knowledge/calibrating-scanner
+
+
+
+Still experiencing issues?
+If the scale continues to provide inaccurate readings after calibration, please contact Evolt Support
+for further assistance.
+                                                                         http://www.evolt360.com/
+
+
+
+
+Connection to the Internet Lost
+Issue: I know we still have WiFi but I cannot connect the Kiosk
+to the internet
+
+Checking Kiosk Connectivity
+
+If your Evolt Kiosk is experiencing connectivity issues, try the following steps:
+
+    1. Connect via Ethernet:
+          o If possible, plug the kiosk directly into a data cable (Ethernet) to establish a stable
+             connection.
+    2. Use Mobile Tethering:
+          o If Ethernet is not available, temporarily tether your mobile phone to the kiosk to
+             provide internet access.
+
+If either method restores connectivity, the kiosk is functioning correctly. For ongoing network
+support or setup assistance, please consult your local IT team.
+                                                                       http://www.evolt360.com/
+
+
+
+The red button to start scanning is not there
+Issue: I cannot see the red button on the control panel to start
+scanning. Or the kiosk has started up and is stuck on the control
+panel page
+
+
+Red “Start Scanning” Button Not Appearing
+
+If the red Start Scanning button is missing, it may indicate that the kiosk is not currently logged in.
+
+To resolve this:
+
+    1. Open the Operator Panel from the Control Panel.
+    2. Enter your kiosk’s unique login credentials.
+    3. If the Start Scanning button does not appear; press the “Refresh” button which should bring
+       you to your Home screen
+
+Note: These are not your personal login details—each kiosk has its own specific login.
+
+Once the correct credentials are entered, the red Start Scanning button should appear, and the
+kiosk will be ready for use.
+
+
+
+
+Additional Note: If the Start Scanning button does not appear and you notice that the Scale API
+status is going from connected to disconnected; please contact EVOLT Support.
+                                                                       http://www.evolt360.com/
+
+
+
+Why do I need to relogging to the Kiosk
+Issue: Every couple of weeks I have to restart the kiosk and
+login again
+Security Settings Update Required
+
+The Evolt Kiosk includes a security feature that occasionally requires its connection settings to the
+Evolt Cloud to be refreshed or updated.
+
+To complete this update:
+
+    1. Restart the kiosk.
+    2. Once restarted, re-enter the kiosk’s login credentials to restore its connection.
+
+This process ensures the kiosk maintains secure and reliable communication with the Evolt Cloud.
+                                                                       http://www.evolt360.com/
+
+
+
+My eGym login is not working
+Issue: When I try to use my eGym wrist band, or card, or my
+mobile phone to login to the Evolt Kiosk the kiosk just beeps
+and does nothing else
+
+Troubleshooting Card Reader Connection on the Evolt Kiosk
+
+If your card reader is not functioning, please follow these steps:
+
+    1. Check the USB Connection:
+          o Ensure the card reader is securely plugged into one of the kiosk’s USB ports.
+          o For best results, unplug and replug the reader to confirm a solid connection.
+          o After reconnecting the reader, restart the kiosk.
+    2. Verify Connection in the Control Panel:
+          o Tap the Evolt logo in the top left corner of the Log In / Sign Up screen to access the
+               Control Panel.
+          o On the right-hand side of the screen, look for the status message “Card Reader
+               Connected.”
+          o If this message does not appear, the card reader may not be properly connected or
+               recognized.
+    3. Check eGym Credentials:
+          o Ensure that your eGym credentials are current and valid, as outdated credentials
+               may prevent proper integration.
+
+If the issue persists after these checks, please contact Evolt Support for further assistance.
+                                                                          http://www.evolt360.com/
+
+
+
+No Red Start Scanning Button
+Issue: When I turn the kiosk on, it does not go to the start
+scanning screen. On the Control Pannel screen the red “start
+scanning” button is not there
+
+Troubleshooting Steps
+
+If you're experiencing this issue with your Kiosk, please follow the steps below:
+
+    1. Check Connectivity
+       Look at the bottom center of the screen. If the Kiosk is online, you’ll see small green text that
+       says “Online.”
+    2. Reconnect to the Network
+       If the Kiosk is not online, go to Network Settings and connect to either Ethernet or Wi-Fi.
+    3. If the kiosk is still not displaying the Red “start scanning” button, press refresh. If it still does
+       not appear, Log In Again
+            o Open the Operator Panel
+            o Enter the Kiosk login credentials
+            o Once logged in, return to the Control Panel Home Page and press Refresh
+    4. Restart the Kiosk
+       If logging in doesn’t resolve the issue, try restarting the Kiosk by powering it off and then
+       back on.
+    5. Contact Support
+       If the issue persists after restarting, please reach out to Evolt Support for further assistance.
+
